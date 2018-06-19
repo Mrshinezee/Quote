@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/home.css">
+      <title>Quote</title>
+  </head>
+<body>
+
+<div id="nav">
+  <h1>QUOTES</h1>
+</div>
+<div id="container-alert" style="display: none;">
+  <p>New quote was added to the quote Array</p>
+</div>
+<div class="container">
+  <div id="row-content">
+    <div id="display" class="sideDiv left-div" >
+      <div class="header">
+        Quotes
+      </div>
+      <div class="left-body "  id="bg_display"> 
+        <p id="list_quotes">" Success is not final; failure is not fatal: It is the courage to continue that counts."</p>
+      </div>
+      <div class="footer">
+        <button id="random" onclick="randomly.randomQuotes()"> CLICK
+        </button> 
+      </div>
+    </div>
+ 
+   <div id="input"  class="sideDiv right-div" >
+     <div class="header">
+       Enter Random Quote
+     </div>
+     <div class="right-body">
+        <textarea id="intake"></textarea>
+     </div>
+     <div class="footer">
+        <button id="submit" onclick="addToArray()">Submit</button>
+     </div>
+   </div>  
+ </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+<footer></footer>
+</html>
